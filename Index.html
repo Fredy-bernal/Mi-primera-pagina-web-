@@ -3,21 +3,33 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Ejemplo HTML y CSS</title>
+    <title>Mi Portafolio</title>
+    <link rel="stylesheet" href="styles.css"> <!-- Enlace a un archivo externo para los estilos, si es necesario -->
     <style>
-        /* Estilos CSS */
+        /* Estilos generales */
         body {
-            font-family: Arial, sans-serif;
-            background-color: #f4f4f4;
+            font-family: 'Arial', sans-serif;
             margin: 0;
             padding: 0;
+            background-color: #3e1212;
+            color: #060606;
         }
 
         header {
-            background-color: #333;
+            background-color: #FEDE7D;
             color: #fff;
             text-align: center;
             padding: 1em;
+        }
+
+        header img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 50%;
+            margin-bottom: 10px;
+            /* Nuevas propiedades para ajustar el tamaño de la imagen */
+            width: 250px; /* Cambia este valor según tu preferencia */
+            height: 250px; /* Cambia este valor según tu preferencia */
         }
 
         section {
@@ -29,7 +41,7 @@
             box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
         }
 
-        h1 {
+        h1, h2, h3 {
             color: #333;
         }
 
@@ -37,19 +49,107 @@
             line-height: 1.6;
             color: #555;
         }
+
+        ul {
+            list-style: none;
+            padding: 0;
+        }
+
+        li {
+            margin-bottom: 10px;
+        }
+
+        footer {
+            text-align: center;
+            padding: 1em;
+            background-color: #333;
+            color: #fff;
+        }
+
+        /* Estilos para la sección de contacto */
+        .contacto {
+            margin-top: 20px;
+        }
+
+        .contacto p {
+            margin-bottom: 10px;
+        }
+
+        .contacto ul {
+            padding-left: 0;
+        }
     </style>
 </head>
 <body>
 
-    <!-- Contenido HTML -->
+    <!-- Encabezado -->
     <header>
-        <h1>Mi Página Web</h1>
+        <img src="https://images.unsplash.com/photo-1587620962725-abab7fe55159?q=80&w=2831&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Descripción de la imagen">
+        <h1>Fredy Aldemar Bernal Rodriguez</h1>
     </header>
 
+    <!-- Biografía -->
     <section>
-        <h2>¡Bienvenido!</h2>
-        <p>Este es un ejemplo básico de HTML y CSS.</p>
+        <h2>Biografía</h2>
+        <p>Hola, soy [Tu Nombre]. Soy [tu profesión o una breve descripción] con experiencia en [áreas de experiencia]. Me apasiona [tu pasión o enfoque principal] y estoy comprometido/a a [tu misión o metas]. A lo largo de mi carrera, he trabajado en [proyectos anteriores o logros destacados].</p>
+        <p>En mi tiempo libre, disfruto de [tus hobbies o intereses]. Mi objetivo es [tu objetivo profesional] y estoy siempre buscando oportunidades para aprender y crecer en mi campo.</p>
     </section>
+
+    <!-- Habilidades -->
+    <section>
+        <h2>Habilidades</h2>
+        <ul>
+            <li>Desarrollo Web</li>
+            <li>Diseño Gráfico</li>
+            <li>Programación en Java</li>
+            <li>Manejo de Bases de Datos</li>
+            <li>SEO y Marketing Digital</li>
+        </ul>
+    </section>
+
+    <!-- Proyectos -->
+    <section>
+        <h2>Proyectos</h2>
+        <ul>
+            <li>
+                <h3>Proyecto 1</h3>
+                <p>Descripción del proyecto 1.</p>
+            </li>
+            <li>
+                <h3>Proyecto 2</h3>
+                <p>Descripción del proyecto 2.</p>
+            </li>
+            <!-- Agrega más proyectos según sea necesario -->
+        </ul>
+    </section>
+
+    <!-- Educación -->
+    <section>
+        <h2>Educación</h2>
+        <ul>
+            <li>
+                <h3>Grado en [Tu Campo de Estudio]</h3>
+                <p>Nombre de la Institución, Año de Graduación</p>
+            </li>
+            <!-- Agrega más información educativa si es necesario -->
+        </ul>
+    </section>
+
+    <!-- Contacto -->
+    <section class="contacto">
+        <h2>Contacto</h2>
+        <p>¡Ponte en contacto conmigo para colaboraciones o simplemente para decir hola!</p>
+        <ul>
+            <li>Email: tu@email.com</li>
+            <li>LinkedIn: linkedin.com/in/tunombre</li>
+            <li>Twitter: @tuusuario</li>
+        </ul>
+    </section>
+
+    <!-- Pie de página -->
+    <footer>
+        <p>&copy; 2023 Mi Portafolio. Todos los derechos reservados.</p>
+    </footer>
 
 </body>
 </html>
